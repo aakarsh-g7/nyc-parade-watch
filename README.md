@@ -22,6 +22,12 @@ Find routes, turn on automatic rerouting, and start watching the trip. Mark that
 
 ![Parade replay showing the switch to the 7 train](docs/replay.jpg)
 
+## the tech stack
+
+I built the app with React, TypeScript, and CSS. It uses Vinext and Vite, with API routes on Cloudflare Workers. Node.js runs the local development tools and tests.
+
+In Live mode, the Maps JavaScript API draws the map, Places Autocomplete helps riders find stops and addresses, and the Routes API calculates walking and transit options. The app checks those options against MTA alerts and city street closures before suggesting a change.
+
 ## run it
 
 Use Node.js 22.13 or newer.
